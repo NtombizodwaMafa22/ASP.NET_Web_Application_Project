@@ -1,0 +1,26 @@
+﻿@model EmployeeWorkLife
+@{
+    ViewData["Title"] = "search";
+}
+
+<h1>Search Employee Number</h1>
+<div class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Search Employee Number</h4>
+            </div>
+            <div class="modal-body">
+                <form method="post" asp-action="Worklife">
+                    <div class="form-group">
+                        <label asp-for="EmployeeNumber"></label>
+                        <input asp-for="EmployeeNumber" class="form-control"/>
+                    </div>
+                    <div>
+                        <input type="submit" class="btn btn-primary fas fa-search" value="Search"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

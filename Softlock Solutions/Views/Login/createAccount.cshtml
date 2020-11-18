@@ -1,0 +1,63 @@
+﻿@model Softlock_Solutions.Models.LoginDatum
+@{
+    ViewData["Title"] = "createAccount";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Create Account</h1>
+        <div>
+            <form method="post" asp-action="createAccount">
+                <div class="row">
+                    <label>Employee ID</label>
+                    <input asp-for="EmployeeId" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Employee Name</label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Employee Surname</label>
+                    <input asp-for="Surname" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Email</label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Password</label>
+                    <input asp-for="Password" class="form-control" type="password" />
+                </div>
+                <div class="row">
+                    <label>Job Level</label>
+                    <input asp-for="Joblevel" class="form-control" />
+                </div>
+                <div class="row">
+                    <label>Job Role</label>
+                    <input asp-for="Role" class="form-control" />
+                </div>
+
+                <div class="row" style="margin-top:15px">
+                    <input type="submit" class="btn btn-info w-10" value="Create Account" />
+                </div>
+            </form>
+
+            <div>
+                <p>Already Have an Account? <a asp-action="Login">Login</a></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+

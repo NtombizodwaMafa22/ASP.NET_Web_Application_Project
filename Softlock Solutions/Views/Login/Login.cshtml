@@ -1,0 +1,44 @@
+﻿@model Softlock_Solutions.Models.LoginDatum
+@{
+    ViewData["Title"] = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body class="text-center p-3 mb-2 bg-dark text-white">
+    <div class="text-center p-3 mb-2 bg-dark text-white" style="margin-top:20px">
+        <h1 class="display-4">Welcome To Softlock Solutions</h1>
+    </div>
+    <div class="container p-3 mb-2 bg-info text-white d-flex justify-content-center">
+        <div>
+            <img src="/userauth3.jpg" alt="user_auth_image" class="rounded-circle mx-auto d-block"/>
+            <form method="post" asp-action="Login" style="margin-top:50px">
+                <div class="form-row" style="margin-top:20px">
+                    <input asp-for="Email" class="form-control-lg w-100" placeholder="Email" />
+                </div>
+                <div class="form-row" style="margin-top:20px">
+                    <input asp-for="Password" class="form-control-lg w-100" type="password" placeholder="Password" />
+                </div>
+                <div class="row" style="margin-top:15px">
+                    <input type="submit" class="btn btn-secondary w-50" value="Login" />
+                </div>
+            </form>
+
+            <div>
+                <p>Not Registered? Create Account <a asp-action="createAccount" class="btn btn-info">Here</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+

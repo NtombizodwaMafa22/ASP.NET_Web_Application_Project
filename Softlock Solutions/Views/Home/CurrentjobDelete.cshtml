@@ -1,0 +1,95 @@
+﻿@model Softlock_Solutions.Models.CurrentJobInformation
+@{
+    ViewData["Title"] = "CurrentjobDelete";
+}
+
+<h1>Current Job Delete Record</h1>
+<form method="post" asp-action="CurrentjobDelete" class="text-center p-3 mb-2 bg-dark text-white">
+    @if (Model.EmployeeNumber != 0)
+    {
+        <input asp-for="EmployeeNumber" hidden />
+    }
+    <div class="border p-3">
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="EmployeeCount"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="EmployeeCount" class="form-control" />
+                        <span asp-validation-for="EmployeeCount" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="HourlyRate"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="HourlyRate" class="form-control" />
+                        <span asp-validation-for="HourlyRate" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="JobInvolvement"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="JobInvolvement" class="form-control" />
+                        <span asp-validation-for="JobInvolvement" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="JobLevel"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="JobLevel" class="form-control summernote"></textarea>
+                        <span asp-validation-for="JobLevel" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="JobRole"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="JobRole" class="form-control summernote"></textarea>
+                        <span asp-validation-for="JobRole" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="JobSatisfaction"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="JobSatisfaction" class="form-control summernote"></textarea>
+                        <span asp-validation-for="JobSatisfaction" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+                            @if (Model.EmployeeNumber != 0)
+                            {
+                                //update
+                                <input type="submit" class="btn btn-danger w-100 fas fa-trash" value="Delete" />
+                            }
+
+                        </div>
+                        <div class="col">
+                            <a asp-action="CurrentJobInformation" asp-controller="Home" class="btn btn-success w-100"><i class="fas fa-sign-out-alt"></i> Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

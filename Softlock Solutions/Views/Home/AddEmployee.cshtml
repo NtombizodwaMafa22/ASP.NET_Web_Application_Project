@@ -1,0 +1,110 @@
+﻿@model Softlock_Solutions.Models.Employee
+@{
+    ViewData["Title"] = "AddEmployee";
+}
+
+<h1>AddEmployee</h1>
+<form method="post" class="text-center p-3 mb-2 bg-dark text-white">
+    <div class="border p-3">
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="EmployeeNumber"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="EmployeeNumber" class="form-control" />
+                        <span asp-validation-for="EmployeeNumber" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Age"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Age" class="form-control" />
+                        <span asp-validation-for="Age" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="DailyRate"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="DailyRate" class="form-control" />
+                        <span asp-validation-for="DailyRate" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Department"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Department" class="form-control" />
+                        <span asp-validation-for="Department" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Education"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="Education" class="form-control summernote"></textarea>
+                        <span asp-validation-for="Education" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="EducationField"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="EducationField" class="form-control summernote"></textarea>
+                        <span asp-validation-for="EducationField" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="Gender"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="Gender" class="form-control summernote"></textarea>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="MaritalStatus"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="MaritalStatus" class="form-control summernote"></textarea>
+                        <span asp-validation-for="MaritalStatus" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+
+                            <input type="submit" class="btn btn-info w-100 fas fa-arrow-alt-circle-right" value="Add" />
+
+
+                        </div>
+                        <div class="col">
+                            <a asp-action="EmployeeData" asp-controller="Home" class="btn btn-success w-100 fas fa-backward"><i class="fas fa-sign-out-alt"></i> Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

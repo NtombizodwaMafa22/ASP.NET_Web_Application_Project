@@ -1,0 +1,115 @@
+﻿@model Softlock_Solutions.Models.EmployeeWorkLife
+@{
+     ViewData["Title"] = "WorklifeDelete";
+}
+
+<h1>Worklife Delete Record</h1>
+<form method="post" asp-action="WorklifeDelete" class="text-center p-3 mb-2 bg-dark text-white">
+    @if (Model.EmployeeNumber != 0)
+    {
+        <input asp-for="EmployeeNumber" hidden />
+    }
+    <div class="border p-3">
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="OverTime"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="OverTime" class="form-control" />
+                        <span asp-validation-for="OverTime" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="TotalWorkingYears"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="TotalWorkingYears" class="form-control" />
+                        <span asp-validation-for="TotalWorkingYears" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="TrainingTimesLastYear"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="TrainingTimesLastYear" class="form-control" />
+                        <span asp-validation-for="TrainingTimesLastYear" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="WorkLifeBalance"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="WorkLifeBalance" class="form-control summernote"></textarea>
+                        <span asp-validation-for="WorkLifeBalance" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="YearsAtCompany"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="YearsAtCompany" class="form-control summernote"></textarea>
+                        <span asp-validation-for="YearsAtCompany" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="YearsInCurrentRole"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="YearsInCurrentRole" class="form-control summernote"></textarea>
+                        <span asp-validation-for="YearsInCurrentRole" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="YearsSinceLastPromotion"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="YearsSinceLastPromotion" class="form-control summernote"></textarea>
+                        <span asp-validation-for="YearsSinceLastPromotion" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="YearsWithCurrManager"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="YearsWithCurrManager" class="form-control summernote"></textarea>
+                        <span asp-validation-for="YearsWithCurrManager" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+                            @if (Model.EmployeeNumber != 0)
+                            {
+                                //update
+                                <input type="submit" class="btn btn-danger fas fa-trash" value="Delete" />
+                            }
+
+                        </div>
+                        <div class="col">
+                            <a asp-action="WorkLife" asp-controller="Home" class="btn btn-success w-100"><i class="fas fa-sign-out-alt"></i> Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

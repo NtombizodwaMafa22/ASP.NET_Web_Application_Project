@@ -1,0 +1,106 @@
+﻿@model Softlock_Solutions.Models.Perfomance
+@{
+    ViewData["Title"] = "PerfomanceDelete";
+}
+
+<h1>PerfomanceDelete</h1>
+<form method="post" asp-action="PerfomanceDelete" class="text-center p-3 mb-2 bg-dark text-white">
+    @if (Model.EmployeeNumber != 0)
+    {
+        <input asp-for="EmployeeNumber" hidden />
+    }
+    <div class="border p-3">
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="MonthlyIncome"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="MonthlyIncome" class="form-control" />
+                        <span asp-validation-for="MonthlyIncome" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="MonthlyRate"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="MonthlyRate" class="form-control" />
+                        <span asp-validation-for="MonthlyRate" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="NumCompaniesWorked"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="NumCompaniesWorked" class="form-control" />
+                        <span asp-validation-for="NumCompaniesWorked" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="PercentSalaryHike"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="PercentSalaryHike" class="form-control summernote"></textarea>
+                        <span asp-validation-for="PercentSalaryHike" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="PerformanceRating"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="PerformanceRating" class="form-control summernote"></textarea>
+                        <span asp-validation-for="PerformanceRating" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="RelationshipSatisfaction"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="RelationshipSatisfaction" class="form-control summernote"></textarea>
+                        <span asp-validation-for="RelationshipSatisfaction" class="text-danger"></span>
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <div class="col-4">
+                        <label asp-for="StandardHours"></label>
+                    </div>
+                    <div class="col-8">
+                        <textarea asp-for="StandardHours" class="form-control summernote"></textarea>
+                        <span asp-validation-for="StandardHours" class="text-danger"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-8 offset-4 row">
+
+                        <div class="col">
+                            @if (Model.EmployeeNumber != 0)
+                            {
+                                //update
+                                <input type="submit" class="btn btn-danger fas fa-trash" value="Delete" />
+                            }
+
+                        </div>
+                        <div class="col">
+                            <a asp-action="WorkLife" asp-controller="Home" class="btn btn-success w-100 fas fa-backward"><i class="fas fa-sign-out-alt"></i> Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

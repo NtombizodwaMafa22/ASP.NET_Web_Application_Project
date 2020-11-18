@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center p-3 mb-2 bg-secondary text-white mb-5">
+        
+        <div class="col text-center text-capitalize">
+            <h1 class="display-4">Dashboard</h1>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="card m-5 w-25 p-3 mb-2 bg-dark text-white">
+                    <img class="card-img-top" src="/employeeicon.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Employee data <a asp-action="EmployeeData" class="btn btn-outline-secondary">View</a>
+                        </p>
+                    </div>
+                </div>
+
+      
+
+                <div class="card m-5 w-25 p-3 mb-2 bg-dark text-white">
+                    <img class="card-img-top" src="/availabilityicon.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Employee Availability <a style="margin:15px" asp-action="Availability" class="btn btn-outline-secondary">View</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card m-5 w-25 p-3 mb-2 bg-dark text-white">
+                    <img class="card-img-top" src="/currentjobicon.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Employee Current Job Information<a style="margin:15px" asp-action="CurrentJobInformation" class="btn btn-outline-secondary">View</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card m-5 w-25 p-3 mb-2 bg-dark text-white">
+                    <img class="card-img-top" src="/workicon.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Employee work <a style="margin:15px" asp-action="Worklife" class="btn btn-outline-secondary">View</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card m-5 w-25 p-3 mb-2 bg-dark text-white">
+                    <img class="card-img-top" src="/perfomanceicon.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Employee Perfomance <a style="margin:15px" asp-action="Perfomance" class="btn btn-outline-secondary">View</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
