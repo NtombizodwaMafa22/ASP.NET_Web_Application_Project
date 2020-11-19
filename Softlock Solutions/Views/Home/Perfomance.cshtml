@@ -3,10 +3,16 @@
     ViewData["Title"] = "Perfomance";
 }
 
-<div class="row justify-content-around">
-    <div><h1>Perfomance Records</h1></div>
-    <a asp-action="AddPerfomance" asp-controller="Home"><i class="fas fa-plus-circle fa-3x"></i></a>
-</div>
+    <div class="row justify-content-around">
+        <div><h1>Perfomance Records</h1></div>
+        <a asp-action="AddPerfomance" asp-controller="Home"><i class="fas fa-plus-circle fa-3x"></i>Add</a>
+        <div>
+            <form method="post" asp-action="searchPerfomance">
+                <input type="text" id="id" placeholder="Employee Number" />
+                <input type="submit" class="btn btn-info w-15" value="search" />
+            </form>
+        </div>
+    </div>
 <div class="container p-3 text-center p-3 mb-2 bg-dark text-white">
 
     @if (Model.Count() > 0)

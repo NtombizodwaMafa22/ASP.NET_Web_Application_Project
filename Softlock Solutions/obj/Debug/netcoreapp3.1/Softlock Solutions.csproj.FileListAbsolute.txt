@@ -172,4 +172,10 @@ C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreap
 C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddCurrentJob.cshtml.g.cs
 C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddPerfomance.cshtml.g.cs
 C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddWorkLife.cshtml.g.cs
-C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\search.cshtml.g.cs
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\searchWorkLife.cshtml.g.cs
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\searchAvailability.cshtml.g.cs
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\searchCurrentJobInfo.cshtml.g.cs
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\searchEmployeeData.cshtml.g.cs
+C:\Users\masag\Desktop\Softlock Solutions\Softlock Solutions\obj\Debug\netcoreapp3.1\Razor\Views\Home\searchPerfomance.cshtml.g.cs

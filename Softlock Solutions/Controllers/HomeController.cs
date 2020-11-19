@@ -24,10 +24,52 @@ namespace Softlock_Solutions.Controllers
             return View();
         }
 
-        public IActionResult search()
+        [HttpPost]
+        public IActionResult searchWorkLife(int id)
         {
-            var dialog = "";
-            return View();
+            //IEnumerable<EmployeeWorkLife> obj = db.EmployeeWorkLives.Find(id);
+            //db.EmployeeWorkLives.Where
+
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var obj = db.EmployeeWorkLives.Find(id);
+            if (obj == null)
+            {
+                return NotFound();
+            }
+
+            return View(obj);
+        }
+
+        [HttpPost]
+        public IActionResult searchAvailability(int id)
+        {
+            IEnumerable<AvailabilityOfEmployee> obj = (IEnumerable<AvailabilityOfEmployee>)db.AvailabilityOfEmployees.Find(id);
+            return View(obj);
+        }
+
+        [HttpPost]
+        public IActionResult searchCurrentJobInfo(int id)
+        {
+            IEnumerable<CurrentJobInformation> obj = (IEnumerable<CurrentJobInformation>)db.CurrentJobInformations.Find(id);
+            return View(obj);
+        }
+
+        [HttpPost]
+        public IActionResult searchEmployeeData(int id)
+        {
+            IEnumerable<Employee> obj = (IEnumerable<Employee>)db.Employees.Find(id);
+            return View(obj);
+        }
+
+        [HttpPost]
+        public IActionResult searchPerfomance(int id)
+        {
+            IEnumerable<Perfomance> obj = (IEnumerable<Perfomance>)db.Perfomances.Find(id);
+            return View(obj);
         }
 
         public IActionResult Perfomance()

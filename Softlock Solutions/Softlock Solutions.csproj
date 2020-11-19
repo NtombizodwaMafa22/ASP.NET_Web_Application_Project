@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Softlock_Solutions</RootNamespace>
+    <UserSecretsId>45c15e88-420f-41ad-9e7e-7c1a387b8e24</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

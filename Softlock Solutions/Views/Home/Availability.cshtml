@@ -3,10 +3,17 @@
     ViewData["Title"] = "Availability";
 }
 
-<div class="row justify-content-around">
-    <div><h1>Availability Of Employees</h1></div>
-    <a asp-action="AddAvailability" asp-controller="Home"><i class="fas fa-plus-circle fa-3x"></i></a>
-</div>
+    <div class="row justify-content-around">
+        <div><h1>Availability Of Employees</h1></div>
+        <a asp-action="AddAvailability" asp-controller="Home"><i class="fas fa-plus-circle fa-3x"></i>Add</a>
+        <div>
+            <form method="post" asp-action="searchAvailability">
+                <input asp-route-model hidden />
+                <input type="text" id="id" placeholder="Employee Number" />
+                <input type="submit" class="btn btn-info w-15" value="search" />
+            </form>
+        </div>
+    </div>
 <div class="text-center p-3 mb-2 bg-dark text-white">
 
     @if (Model.Count() > 0)

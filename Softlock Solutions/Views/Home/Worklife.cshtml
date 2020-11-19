@@ -1,15 +1,14 @@
 ﻿@model IEnumerable<Softlock_Solutions.Models.EmployeeWorkLife>
-
 @{
     ViewData["Title"] = "Worklife";
 }
 
     <div class="row justify-content-around">
         <div><h1>Work Life Records</h1></div>
-        <a asp-action="AddWorkLife" asp-controller="Home"><i class="fas fa-plus-circle fa-3x"></i></a>
+        <a asp-action="AddWorkLife" asp-controller="Home"><i class="fas fa-plus-circle fa-3x"></i>Add</a>
         <div>
-            <form method="post" asp-action="Worklife">
-                <input type="text" placeholder="Employee Number"/>
+            <form method="post" asp-action="searchWorkLife">
+                <input type="text" id="id" placeholder="Employee Number"/>
                 <input type="submit" class="btn btn-info w-15" value="search" />
             </form>
         </div>

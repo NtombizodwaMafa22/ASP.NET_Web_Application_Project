@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4MFZmEzHSkmLqfjpcDi5zQAAAAACAAAAAAAQZgAAAAEAACAAAABb6NGbQy2Lf1TtqzFBcVJF/rJFu6iIOVSkxTa5D3OkqgAAAAAOgAAAAAIAACAAAAANq2Lg1h4ZR5sybFFX16dTcz+LvqbFHux51mkvWoDD+IAAAAA4ye9KTbw3tDIr7ZcHwj/WhOX+xvWLzFJVM0mQTLF/I9zmso1VX7iUwhJtZWpVHC9l8Ln2Fi+om9ZvrZjrb3/Vxz8ipnibqbg6HqWxD/s89VHe80LlatIh6++pNUB0P3EmID9XMpSOGe6DXiqpTlwgLDk9vVxiZDVusAhjiC01G0AAAABnFvLKAmtamZPpKlSbxZVBw5tc8a+I3sLFqAARulUxbjidFfwzKqMyCDdWSlum1QlZfDCDoWEUPusFybhPuwaa</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:softlocksolutionsdbserver.database.windows.net,1433%3bInitial Catalog=Softlock Solutions%3bPersist Security Info=False%3bUser ID=softlock_solutions%3bPassword=6991%40Ian%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>
